@@ -2,33 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dba69579-024f-442a-b5bf-b31a92577c82" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Image/1.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Image/10：环境变量配置2.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Image/11：环境变量配置3.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Image/12：环境变量配置4.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Image/13：环境变量配置5.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Image/14：找到Anaconda Navigator.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Image/15：打开Anaconda.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Image/16：PyTorch安装1.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Image/16：PyTorch安装2：pip下打命令.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Image/17：PyTorchvision安装.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Image/18：小demo运行检验是否安装成功.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Image/19：conda环境下安装pytorch官网命令.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Image/2.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Image/20：cmd下输入命令安装（conda）.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Image/21：在Jupyter下新建python文件验证.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Image/21：验证代码.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Image/22：验证成功截图.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Image/3.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Image/4.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Image/5.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Image/6.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Image/7.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Image/8.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Image/9：Anaconda环境变量配置1.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Image/conda.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Install tutorial.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Install tutorial.md" beforeDir="false" afterPath="$PROJECT_DIR$/InstallIutorial.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,11 +25,11 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Install tutorial.md">
+        <entry file="file://$PROJECT_DIR$/InstallIutorial.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="195">
-                <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+                <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
               </first_editor>
               <second_editor />
             </state>
@@ -75,7 +49,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1591" />
@@ -93,11 +67,6 @@
             <path>
               <item name="PyTorchDocs" type="b2602c69:ProjectViewProjectNode" />
               <item name="PyTorchDocs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PyTorchDocs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PyTorchDocs" type="462c0819:PsiDirectoryNode" />
-              <item name="Image" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -156,9 +125,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.034246575" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27713382" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -198,11 +166,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Install tutorial.md">
+    <entry file="file://$PROJECT_DIR$/InstallIutorial.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="195">
-            <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+            <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
           </first_editor>
           <second_editor />
         </state>
