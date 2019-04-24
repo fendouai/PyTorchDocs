@@ -28,8 +28,8 @@
         <entry file="file://$PROJECT_DIR$/InstallIutorial.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="719">
-                <caret line="46" selection-start-line="46" selection-end-line="46" />
+              <first_editor relative-caret-position="180">
+                <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
               </first_editor>
               <second_editor />
             </state>
@@ -50,7 +50,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1591" />
@@ -171,8 +171,8 @@
     <entry file="file://$PROJECT_DIR$/InstallIutorial.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="719">
-            <caret line="46" selection-start-line="46" selection-end-line="46" />
+          <first_editor relative-caret-position="180">
+            <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
           </first_editor>
           <second_editor />
         </state>
