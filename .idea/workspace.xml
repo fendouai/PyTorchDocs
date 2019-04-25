@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dba69579-024f-442a-b5bf-b31a92577c82" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/InstallIutorial.md" beforeDir="false" afterPath="$PROJECT_DIR$/InstallIutorial.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FirstSection/PyTorchIntro.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/pytorch.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InstallIutorial.md" beforeDir="false" afterPath="$PROJECT_DIR$/FirstSection/InstallIutorial.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,11 +28,23 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/InstallIutorial.md">
+        <entry file="file://$PROJECT_DIR$/FirstSection/PyTorchIntro.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="630">
-                <caret line="33" column="11" lean-forward="true" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
+              <first_editor relative-caret-position="720">
+                <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FirstSection/InstallIutorial.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="240">
+                <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="19" />
               </first_editor>
               <second_editor />
             </state>
@@ -47,21 +62,21 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/Install tutorial.md" />
         <option value="$PROJECT_DIR$/InstallIutorial.md" />
+        <option value="$PROJECT_DIR$/FirstSection/PyTorchIntro.md" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1591" />
-    <option name="height" value="821" />
+    <option name="width" value="1259" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -69,10 +84,16 @@
               <item name="PyTorchDocs" type="b2602c69:ProjectViewProjectNode" />
               <item name="PyTorchDocs" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="PyTorchDocs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PyTorchDocs" type="462c0819:PsiDirectoryNode" />
+              <item name="Image" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -91,6 +112,9 @@
     </option>
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\github clone project\PyTorchDocs\FirstSection" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="G:\github clone project\PyTorchDocs\Image" />
     </key>
@@ -128,7 +152,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.076396205" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16332982" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -168,11 +192,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/InstallIutorial.md">
+    <entry file="file://$PROJECT_DIR$/FirstSection/InstallIutorial.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="630">
-            <caret line="33" column="11" lean-forward="true" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
+          <first_editor relative-caret-position="240">
+            <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="19" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FirstSection/PyTorchIntro.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="720">
+            <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
           </first_editor>
           <second_editor />
         </state>
