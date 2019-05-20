@@ -73,7 +73,7 @@ print(x)
 
 ![](Image/输出05.PNG)
 
-<h4>6.获取张量的维度
+### 获取张量的维度
 
 ```buildoutcfg
 print(x.size())
@@ -82,7 +82,7 @@ print(x.size())
 
 ![](Image/输出06.PNG)
 
-<h4>7.张量的加法运算
+### 张量的加法运算
 
 <h5>(1)直接使用“+”运算符
 
@@ -126,7 +126,7 @@ print(x[:,1])
 
 ![](./Image/输出08.PNG)
 
-<h4>8.view()函数改变tensor的大小或形状
+### 改变tensor的大小或形状
 
 ```buildoutcfg
 x = torch.randn(4, 4)
@@ -138,7 +138,7 @@ print(x.size(), y.size(), z.size())
 
 ![](Image/输出09.PNG)
 
-<h4>9.item()函数获取tensor的value值
+### 获取tensor的value值
 
 ```buildoutcfg
 x = torch.randn(1)
