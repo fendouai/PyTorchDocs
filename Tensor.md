@@ -84,26 +84,26 @@ print(x.size())
 
 ### 张量的加法运算
 
-<h5>(1)直接使用“+”运算符
+<h4>1.直接使用“+”运算符
 
 ```buildoutcfg
 y = torch.rand(5, 3)
 print(x + y)
 ```
-<h5>(2)使用add()函数
+<h4>2.使用add()函数
 
 ```
 print(torch.add(x, y))
 ```
 
-<h5>(3)提供一个输出tensor作为参数
+<h4>3.提供一个输出tensor作为参数
 
 ```buildoutcfg
 result = torch.empty(5, 3)
 torch.add(x, y, out=result)
 print(result)
 ```
-<h5>(4)使用add_()函数做加法，并取代原张量
+<h4>4.使用add_()函数做加法，并取代原张量
 
 ```buildoutcfg
 # adds x to y
@@ -116,7 +116,7 @@ print(y)
 
 注意：任何使张量发生变化的操作都有一个前缀'_'。例如：x_copy_(y),x_t()，将会改变x
 
-<h4>8.张量的索引操作
+### 张量的索引操作
 
 ```buildoutcfg
 #切片：取tensor矩阵每行的第二个元素作为输出
