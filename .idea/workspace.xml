@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dba69579-024f-442a-b5bf-b31a92577c82" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Tensor.md" beforeDir="false" afterPath="$PROJECT_DIR$/Tensor.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SecondSection/Autograd.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondSection/Tensor.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondSection/Tensor.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tensor.md" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,12 +27,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Tensor.md">
+        <entry file="file://$PROJECT_DIR$/SecondSection/Tensor.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="-12">
-                <caret line="118" column="4" selection-start-line="118" selection-start-column="4" selection-end-line="118" selection-end-column="4" />
+              <first_editor relative-caret-position="318">
+                <caret line="138" column="22" lean-forward="true" selection-start-line="138" selection-start-column="22" selection-end-line="138" selection-end-column="22" />
               </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SecondSection/Autograd.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor />
               <second_editor />
             </state>
           </provider>
@@ -55,10 +67,10 @@
         <option value="$PROJECT_DIR$/Install tutorial.md" />
         <option value="$PROJECT_DIR$/InstallIutorial.md" />
         <option value="$PROJECT_DIR$/FirstSection/PyTorchIntro.md" />
-        <option value="$PROJECT_DIR$/SecondSection/Tensor.md" />
         <option value="$PROJECT_DIR$/FirstSection/InstallIutorial.md" />
         <option value="$PROJECT_DIR$/tensorTest.py" />
         <option value="$PROJECT_DIR$/Tensor.md" />
+        <option value="$PROJECT_DIR$/SecondSection/Tensor.md" />
       </list>
     </option>
   </component>
@@ -89,7 +101,7 @@
             <path>
               <item name="PyTorchDocs" type="b2602c69:ProjectViewProjectNode" />
               <item name="PyTorchDocs" type="462c0819:PsiDirectoryNode" />
-              <item name="Image" type="462c0819:PsiDirectoryNode" />
+              <item name="SecondSection" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -114,6 +126,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\github clone project\PyTorchDocs\SecondSection" />
       <recent name="G:\github clone project\PyTorchDocs\Image" />
       <recent name="G:\github clone project\PyTorchDocs\FirstSection" />
     </key>
@@ -227,16 +240,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SecondSection/Tensor.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="480">
-            <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -282,11 +285,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tensor.md">
+    <entry file="file://$PROJECT_DIR$/SecondSection/Autograd.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-12">
-            <caret line="118" column="4" selection-start-line="118" selection-start-column="4" selection-end-line="118" selection-end-column="4" />
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SecondSection/Tensor.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="420">
+            <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SecondSection/Tensor.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="318">
+            <caret line="138" column="22" lean-forward="true" selection-start-line="138" selection-start-column="22" selection-end-line="138" selection-end-column="22" />
           </first_editor>
           <second_editor />
         </state>
