@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dba69579-024f-442a-b5bf-b31a92577c82" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Tensor.md" beforeDir="false" afterPath="$PROJECT_DIR$/Tensor.md" afterDir="false" />
-    </list>
+    <list default="true" id="dba69579-024f-442a-b5bf-b31a92577c82" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +26,8 @@
         <entry file="file://$PROJECT_DIR$/Tensor.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="540">
-                <caret line="141" lean-forward="true" selection-start-line="141" selection-end-line="141" />
+              <first_editor relative-caret-position="450">
+                <caret line="138" column="19" lean-forward="true" selection-start-line="138" selection-start-column="19" selection-end-line="138" selection-end-column="19" />
               </first_editor>
               <second_editor />
             </state>
@@ -285,8 +283,8 @@
     <entry file="file://$PROJECT_DIR$/Tensor.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="540">
-            <caret line="141" lean-forward="true" selection-start-line="141" selection-end-line="141" />
+          <first_editor relative-caret-position="450">
+            <caret line="138" column="19" lean-forward="true" selection-start-line="138" selection-start-column="19" selection-end-line="138" selection-end-column="19" />
           </first_editor>
           <second_editor />
         </state>
