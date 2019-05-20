@@ -34,6 +34,20 @@ import torch
 # z = x.view(-1, 8)  # the size -1 is inferred from other dimensions
 # print(x.size(), y.size(), z.size())
 
-x = torch.randn(1)
+# x = torch.randn(1)
+# print(x)
+# print(x.item())
+
+# x = torch.rand(5, 3)
+# print(x)
+# x[0,1] = 100
+# print(x)
+x = torch.randn(2, 3)
 print(x)
-print(x.item())
+
+y = torch.randn(3)
+print(y)
+
+# 被传入的参数中的第1个参数代表矩阵，第2个参数代表向量，顺序不能颠倒。
+z = torch.mv(x, y)
+print(z)
