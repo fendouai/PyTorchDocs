@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dba69579-024f-442a-b5bf-b31a92577c82" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Image/输出11.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Image/输出12.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Image/输出13.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Image/输出14.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Image/输出15.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Image/输出16.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Image/输出17.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Image/输出18.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Image/输出19.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/输出20.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Image/输出21.PNG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SecondSection/Autograd.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondSection/Autograd.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SecondSection/Tensor.md" beforeDir="false" afterPath="$PROJECT_DIR$/SecondSection/Tensor.md" afterDir="false" />
@@ -27,8 +20,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tensorTest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="51" column="18" lean-forward="true" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
+            <state relative-caret-position="199">
+              <caret line="13" column="13" lean-forward="true" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -36,24 +29,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SecondSection/Tensor.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="-694">
-                <caret line="217" lean-forward="true" selection-start-line="217" selection-end-line="217" />
+              <first_editor relative-caret-position="58">
+                <caret line="131" column="3" lean-forward="true" selection-start-line="131" selection-start-column="3" selection-end-line="131" selection-end-column="3" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SecondSection/Autograd.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="210">
-                <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+              <first_editor relative-caret-position="356">
+                <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
               </first_editor>
               <second_editor />
             </state>
@@ -81,16 +74,17 @@
         <option value="$PROJECT_DIR$/FirstSection/PyTorchIntro.md" />
         <option value="$PROJECT_DIR$/FirstSection/InstallIutorial.md" />
         <option value="$PROJECT_DIR$/Tensor.md" />
-        <option value="$PROJECT_DIR$/SecondSection/Autograd.md" />
-        <option value="$PROJECT_DIR$/tensorTest.py" />
         <option value="$PROJECT_DIR$/SecondSection/Tensor.md" />
+        <option value="$PROJECT_DIR$/tensorTest.py" />
+        <option value="$PROJECT_DIR$/SecondSection/Autograd.md" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="487" />
-    <option name="width" value="1439" />
-    <option name="height" value="1040" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-342" />
+    <option name="y" value="557" />
+    <option name="width" value="1840" />
+    <option name="height" value="823" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -199,15 +193,15 @@
     <option name="totallyTimeSpent" value="12000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="487" y="0" width="1439" height="1040" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17558886" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09694415" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4520397" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3488624" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -297,11 +291,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SecondSection/Autograd.md">
+    <entry file="file://$PROJECT_DIR$/SecondSection/Tensor.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="210">
-            <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <first_editor relative-caret-position="58">
+            <caret line="131" column="3" lean-forward="true" selection-start-line="131" selection-start-column="3" selection-end-line="131" selection-end-column="3" />
           </first_editor>
           <second_editor />
         </state>
@@ -309,19 +303,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tensorTest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="51" column="18" lean-forward="true" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
+        <state relative-caret-position="199">
+          <caret line="13" column="13" lean-forward="true" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SecondSection/Tensor.md">
+    <entry file="file://$PROJECT_DIR$/SecondSection/Autograd.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-694">
-            <caret line="217" lean-forward="true" selection-start-line="217" selection-end-line="217" />
+          <first_editor relative-caret-position="356">
+            <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
           </first_editor>
           <second_editor />
         </state>
