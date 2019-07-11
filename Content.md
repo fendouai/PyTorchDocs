@@ -22,7 +22,7 @@
 ### 1.微调基于torchvision 0.3的目标检测模型
 ### 2.微调TorchVision模型
 ### 3.Spatial Transformer Networks
-### 4.使用PyTorch进行神经传递
+### 4.使用PyTorch进行神经网络风格迁移
 ### 5.对抗性示例生成
 ### 6.使用ONNX将模型转移至Caffe2和Mobile
 
@@ -30,7 +30,7 @@
 ### 1.Chatbot教程
 ### 2.使用字符级RNN生成名称
 ### 3.使用字符级RNN对名称进行分类
-### 4.深入学习NLP
+### 4.深度学习NLP
 ### 5.用序列翻译网络和注意的顺序
 
 ## 第六章：PyTorch之生成对抗网络
