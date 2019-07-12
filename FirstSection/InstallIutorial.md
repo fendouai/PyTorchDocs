@@ -1,7 +1,7 @@
 # 1. 安装Anaconda 3.5
 Anaconda是一个用于科学计算的Python发行版，支持Linux、Mac和Window系统，提供了包管理与环境管理的功能，可以很方便地解决Python并存、切换，以及各种第三方包安装的问题。
 ## 1.1 下载：
-可以直接从[Anaconda官网](https://www.continuum.io/downloads)下载，但因为Anaconda的服务器在国外，所以下载速度会很慢，这里推荐使用[清华的镜像](https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/)来下载。选择合适你的版本下载，我这里选择[Anaconda3-5.1.0-Windows-x86_64.exe](https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/Anaconda3-5.1.0-Windows-x86_64.exe "Anaconda3-5.1.0-Windows-x86_64.exe")
+可以直接从 [Anaconda官网](https://www.continuum.io/downloads)下载，但因为Anaconda的服务器在国外，所以下载速度会很慢，这里推荐使用[清华的镜像](https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/)来下载。选择合适你的版本下载，我这里选择[Anaconda3-5.1.0-Windows-x86_64.exe](https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/Anaconda3-5.1.0-Windows-x86_64.exe "Anaconda3-5.1.0-Windows-x86_64.exe")
 
 ## 1.2 安装
 下载之后，点击安装即可，步骤依次如下：
@@ -32,7 +32,7 @@ Anaconda是一个用于科学计算的Python发行版，支持Linux、Mac和Wind
 
 # 2. 安装PyTorch & torchvision
 ## 2.1 命令获取
-进入[PyTorch官网]( https://pytorch.org/)，依次选择你电脑的配置（我这里已经下载了python3.7），这里提供使用pip和conda两种环境下安装的步骤截图
+进入 [PyTorch官网]( https://pytorch.org/)，依次选择你电脑的配置（我这里已经下载了python3.7），这里提供使用pip和conda两种环境下安装的步骤截图
 ### (1)使用pip：windows+pip+python3.7+None
 
 ![](../Image/16：PyTorch安装1.PNG)

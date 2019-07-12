@@ -1,8 +1,8 @@
 # 目录
 本文档主要使用于PyTorch入门学者，主要参考PyTorch官方文档。
 ## 第一章：PyTorch之简介与下载
-### 1.PyTorch简介
-### 2.PyTorch环境搭建
+### 1.[PyTorch简介](https://github.com/fendouai/PyTorchDocs/blob/master/FirstSection/PyTorchIntro.md)
+### 2.[PyTorch环境搭建](https://github.com/fendouai/PyTorchDocs/blob/master/FirstSection/InstallIutorial.md)
 
 ## 第二章：PyTorch之60min入门
 ### 1.张量：Tensor
