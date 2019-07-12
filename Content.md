@@ -12,11 +12,11 @@
 ### 5.数据并行化处理
 
 ## 第三章：PyTorch之入门强化
-### 1.数据加载和处理
-### 2.PyTorch小试牛刀
-### 3.迁移学习
-### 4.混合前端的seq2seq模型部署
-### 5.保存和加载模型
+### 1.[数据加载和处理](https://github.com/fendouai/PyTorchDocs/blob/master/ThirdSection/DataLoding.md)
+### 2.[PyTorch小试牛刀](https://github.com/fendouai/PyTorchDocs/blob/master/ThirdSection/LearningPyTorch.md)
+### 3.[迁移学习](https://github.com/fendouai/PyTorchDocs/blob/master/ThirdSection/TransferLearning.md)
+### 4.[混合前端的seq2seq模型部署](https://github.com/fendouai/PyTorchDocs/blob/master/ThirdSection/DeployingSeq2SeqModelwithHybridFrontend.MD)
+### 5.[保存和加载模型](https://github.com/fendouai/PyTorchDocs/blob/master/ThirdSection/SaveModel.md)
 
 ## 第四章：PyTorch之图像篇
 ### 1.微调基于torchvision 0.3的目标检测模型
