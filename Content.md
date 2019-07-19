@@ -19,7 +19,7 @@
 ### 5.[保存和加载模型](https://github.com/fendouai/PyTorchDocs/blob/master/ThirdSection/SaveModel.md)
 
 ## 第四章：PyTorch之图像篇
-### 1.微调基于torchvision 0.3的目标检测模型
+### 1.[微调基于torchvision 0.3的目标检测模型](https://github.com/fendouai/PyTorchDocs/blob/master/fourSection/ObjectDetectionFinetuning.md)
 ### 2.微调TorchVision模型
 ### 3.Spatial Transformer Networks
 ### 4.使用PyTorch进行神经网络风格迁移
