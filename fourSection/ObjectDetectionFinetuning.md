@@ -41,11 +41,11 @@ PennFudanPed/
     FudanPed00003.png
     FudanPed00004.png
 ```
-下面是一个图像以及其分割蒙版的例子：
+下面是一个图像以及其分割掩膜的例子：
 ![](image/01.png)
 ![](image/02.png)
 
-因此每个图像具有相应的分割掩码，其中每个颜色对应于不同的实例。让我们为这个数据集写一个`torch.utils.data.Dataset`类。
+因此每个图像具有相应的分割掩膜，其中每个颜色对应于不同的实例。让我们为这个数据集写一个`torch.utils.data.Dataset`类。
 
 #### 2.2 为数据集编写类
 ```buildoutcfg
@@ -69,7 +69,7 @@ class PennFudanDataset(object):
         img_path = os.path.join(self.root, "PNGImages", self.imgs[idx])
         mask_path = os.path.join(self.root, "PedMasks", self.masks[idx])
         img = Image.open(img_path).convert("RGB")
-        # 请注意我们还没有将掩码转换为RGB,
+        # 请注意我们还没有将mask转换为RGB,
         # 因为每种颜色对应一个不同的实例
         # 0是背景
         mask = Image.open(mask_path)
@@ -80,11 +80,11 @@ class PennFudanDataset(object):
         # 第一个id是背景，所以删除它
         obj_ids = obj_ids[1:]
 
-        # 将颜色编码的掩码分成一组
+        # 将颜色编码的mask分成一组
         # 二进制格式
         masks = mask == obj_ids[:, None, None]
 
-        # 获取每个掩码的边界框坐标
+        # 获取每个mask的边界框坐标
         num_objs = len(obj_ids)
         boxes = []
         for i in range(num_objs):
@@ -190,7 +190,7 @@ model = FasterRCNN(backbone,
 #### 3.1 PennFudan 数据集的实例分割模型
 在我们的例子中，我们希望从预先训练的模型中进行微调，因为我们的数据集非常小，所以我们将遵循上述第一种情况。
 
-这里我们还要计算实例分割掩码，因此我们将使用 Mask R-CNN：
+这里我们还要计算实例分割掩膜，因此我们将使用 Mask R-CNN：
 ```buildoutcfg
 import torchvision
 from torchvision.models.detection.faster_rcnn import FastRCNNPredictor
@@ -206,10 +206,10 @@ def get_model_instance_segmentation(num_classes):
     # 用新的头部替换预先训练好的头部
     model.roi_heads.box_predictor = FastRCNNPredictor(in_features, num_classes)
 
-    # 现在获取蒙版分类器的输入特征数
+    # 现在获取掩膜分类器的输入特征数
     in_features_mask = model.roi_heads.mask_predictor.conv5_mask.in_channels
     hidden_layer = 256
-    # 并用新的掩码预测器替换掩码预测器
+    # 并用新的掩膜预测器替换掩膜预测器
     model.roi_heads.mask_predictor = MaskRCNNPredictor(in_features_mask,
                                                        hidden_layer,
                                                        num_classes)
