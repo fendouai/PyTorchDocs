@@ -5,7 +5,7 @@
 ### 2.[PyTorch环境搭建](https://github.com/fendouai/PyTorchDocs/blob/master/FirstSection/InstallIutorial.md)
 
 ## 第二章：PyTorch之60min入门
-### 1.张量：Tensor
+### 1.张量：[Tensor](https://github.com/fendouai/PyTorchDocs/blob/master/SecondSection/Tensor.md)
 ### 2.自动求导：Autograd
 ### 3.神经网络
 ### 4.图像分类器
