@@ -21,8 +21,8 @@
 ## 第四章：PyTorch之图像篇
 ### 1.[微调基于torchvision 0.3的目标检测模型](https://github.com/fendouai/PyTorchDocs/blob/master/fourSection/ObjectDetectionFinetuning.md)
 ### 2.[微调TorchVision模型](https://github.com/fendouai/PyTorchDocs/blob/master/fourSection/FinetuningTorchVisionModel.md)
-### 3.空间变换器网络
-### 4.使用PyTorch进行Neural-Transfer
+### 3.[空间变换器网络](https://github.com/fendouai/PyTorchDocs/blob/master/fourSection/SpatialTranNet.md)
+### 4.[使用PyTorch进行Neural-Transfer](https://github.com/fendouai/PyTorchDocs/blob/master/fourSection/NeuralTransfer.md)
 ### 5.对抗性示例生成
 ### 6.使用ONNX将模型转移至Caffe2和Mobile
 
