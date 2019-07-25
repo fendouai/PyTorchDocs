@@ -17,36 +17,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tensorTest.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="13" column="13" lean-forward="true" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-              <folding>
-                <element signature="e#0#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SecondSection/Tensor.md">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/fourSection/ONNX.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="58">
-                <caret line="131" column="3" lean-forward="true" selection-start-line="131" selection-start-column="3" selection-end-line="131" selection-end-column="3" />
+              <first_editor relative-caret-position="492">
+                <caret line="121" column="34" selection-start-line="121" selection-start-column="34" selection-end-line="121" selection-end-column="34" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SecondSection/Autograd.md">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Content.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="356">
-                <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+              <first_editor relative-caret-position="459">
+                <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
               </first_editor>
               <second_editor />
             </state>
@@ -77,51 +65,55 @@
         <option value="$PROJECT_DIR$/SecondSection/Tensor.md" />
         <option value="$PROJECT_DIR$/tensorTest.py" />
         <option value="$PROJECT_DIR$/SecondSection/Autograd.md" />
+        <option value="$PROJECT_DIR$/fourSection/AdversarialExampleGene.md" />
+        <option value="$PROJECT_DIR$/Content.md" />
+        <option value="$PROJECT_DIR$/fourSection/ONNX.md" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-342" />
-    <option name="y" value="557" />
-    <option name="width" value="1840" />
-    <option name="height" value="823" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="45" />
+    <option name="y" value="85" />
+    <option name="width" value="2066" />
+    <option name="height" value="1151" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="PyTorchDocs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PyTorchDocs" type="462c0819:PsiDirectoryNode" />
+              <item name="PyTorchTrans" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PyTorchTrans" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="PyTorchDocs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PyTorchDocs" type="462c0819:PsiDirectoryNode" />
-              <item name="FirstSection" type="462c0819:PsiDirectoryNode" />
+              <item name="PyTorchTrans" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PyTorchTrans" type="462c0819:PsiDirectoryNode" />
+              <item name="fourSection" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="PyTorchDocs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PyTorchDocs" type="462c0819:PsiDirectoryNode" />
-              <item name="SecondSection" type="462c0819:PsiDirectoryNode" />
+              <item name="PyTorchTrans" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PyTorchTrans" type="462c0819:PsiDirectoryNode" />
+              <item name="fourSection" type="462c0819:PsiDirectoryNode" />
+              <item name="image" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Image" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/fourSection/image" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -131,13 +123,16 @@
     </option>
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\github project\PyTorchTrans\fourSection\image" />
+      <recent name="E:\github project\PyTorchTrans\fourSection\notation" />
+      <recent name="G:\github clone project\PyTorchDocs\Image" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\github project\PyTorchTrans\fourSection\notation" />
       <recent name="G:\github clone project\PyTorchDocs\Image" />
       <recent name="G:\github clone project\PyTorchDocs\SecondSection" />
       <recent name="G:\github clone project\PyTorchDocs\FirstSection" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="G:\github clone project\PyTorchDocs\Image" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -193,10 +188,10 @@
     <option name="totallyTimeSpent" value="12000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-7" y="-7" width="1455" height="935" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09694415" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10641297" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -210,7 +205,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32913387" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -284,18 +279,18 @@
     <entry file="file://$PROJECT_DIR$/SecondSection/Tensor.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="420">
-            <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+          <first_editor relative-caret-position="3537">
+            <caret line="131" column="3" selection-start-line="131" selection-start-column="3" selection-end-line="131" selection-end-column="3" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SecondSection/Tensor.md">
+    <entry file="file://$PROJECT_DIR$/SecondSection/Autograd.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="58">
-            <caret line="131" column="3" lean-forward="true" selection-start-line="131" selection-start-column="3" selection-end-line="131" selection-end-column="3" />
+          <first_editor relative-caret-position="493">
+            <caret line="60" selection-start-line="60" selection-end-line="60" />
           </first_editor>
           <second_editor />
         </state>
@@ -303,19 +298,55 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tensorTest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="13" column="13" lean-forward="true" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        <state relative-caret-position="351">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SecondSection/Autograd.md">
+    <entry file="file://$PROJECT_DIR$/fourSection/NeuralTransfer.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="356">
-            <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+          <first_editor relative-caret-position="-1134" />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fourSection/ObjectDetectionFinetuning.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fourSection/AdversarialExampleGene.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="573">
+            <caret line="281" lean-forward="true" selection-start-line="281" selection-end-line="281" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Content.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="459">
+            <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fourSection/ONNX.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="492">
+            <caret line="121" column="34" selection-start-line="121" selection-start-column="34" selection-end-line="121" selection-end-column="34" />
           </first_editor>
           <second_editor />
         </state>
