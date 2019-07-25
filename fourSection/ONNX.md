@@ -288,6 +288,8 @@ final_img.save("./_static/img/cat_superres_mobile.jpg")
 
 现在，您可以比较图像 cat_superres.jpg（来自纯caffe2后端执行的模型输出）和 cat_superres_mobile.jpg（来自移动执行的模型输出），
 并看到两个图像看起来相同。如果它们看起来不一样，那么在移动设备上执行会出现问题，在这种情况下，请联系Caffe2社区。你应该期望看
-到输出图像如下所示：
+
+
 ![](image/20.png)
+
 使用上述步骤，您可以轻松地在移动设备上部署模型。 另外，有关caffe2移动后端的更多信息，请查看[caffe2-android-demo](https://caffe2.ai/docs/AI-Camera-demo-android.html)。
