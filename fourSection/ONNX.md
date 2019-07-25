@@ -156,7 +156,9 @@ with open('predict_net.pb', "wb") as fopen:
 的`init_net`和`predict_net`，并在正常的 Caffe2 后端和移动设备中运行它们，并验证两次运行中生成的输出高分辨率猫咪图像是否相同。
 
 在本教程中，我们将使用广泛使用的著名猫咪图像，如下所示：
+
 ![](image/19.jpg)
+
 ```buildoutcfg
 # 一些必备的导入包
 from caffe2.proto import caffe2_pb2

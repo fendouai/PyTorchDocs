@@ -19,6 +19,7 @@ FGSM 攻击是一种白盒攻击，其目标是错误分类。有了这些背景
 换句话说，攻击是利用损失函数的梯度，然后调整输入数据以最大化损失。
 
 在进入代码之前，先讲一下著名的 FGSM 熊猫示例并提取一些符号。
+
 ![](image/15.png)
 
 从图中可以看出，![](notation/x.gif)是正确分类为“熊猫”的原始输入图像，![](notation/y.gif)是![](notation/x.gif)的基本事实标签，
@@ -243,6 +244,7 @@ plt.xlabel("Epsilon")
 plt.ylabel("Accuracy")
 plt.show()
 ```
+
 ![](image/16.png)
 
 #### 4.2 样本对抗性示例
@@ -268,6 +270,7 @@ for i in range(len(epsilons)):
 plt.tight_layout()
 plt.show()
 ```
+
 ![](image/17.png)
 
 ### 5.展望

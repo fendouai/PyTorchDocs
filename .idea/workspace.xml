@@ -17,12 +17,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fourSection/ONNX.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="627">
-                <caret line="294" selection-start-line="291" selection-end-line="294" />
+              <first_editor relative-caret-position="-750">
+                <caret line="158" selection-start-line="158" selection-end-line="158" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/fourSection/AdversarialExampleGene.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="567">
+                <caret line="21" selection-start-line="21" selection-end-line="21" />
               </first_editor>
               <second_editor />
             </state>
@@ -65,9 +77,9 @@
         <option value="$PROJECT_DIR$/SecondSection/Tensor.md" />
         <option value="$PROJECT_DIR$/tensorTest.py" />
         <option value="$PROJECT_DIR$/SecondSection/Autograd.md" />
-        <option value="$PROJECT_DIR$/fourSection/AdversarialExampleGene.md" />
         <option value="$PROJECT_DIR$/Content.md" />
         <option value="$PROJECT_DIR$/fourSection/ONNX.md" />
+        <option value="$PROJECT_DIR$/fourSection/AdversarialExampleGene.md" />
       </list>
     </option>
   </component>
@@ -191,7 +203,7 @@
     <frame x="-7" y="-7" width="1455" height="935" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10641297" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19661734" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -322,16 +334,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fourSection/AdversarialExampleGene.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="573">
-            <caret line="281" lean-forward="true" selection-start-line="281" selection-end-line="281" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Content.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -345,8 +347,18 @@
     <entry file="file://$PROJECT_DIR$/fourSection/ONNX.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="627">
-            <caret line="294" selection-start-line="291" selection-end-line="294" />
+          <first_editor relative-caret-position="-750">
+            <caret line="158" selection-start-line="158" selection-end-line="158" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fourSection/AdversarialExampleGene.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="567">
+            <caret line="21" selection-start-line="21" selection-end-line="21" />
           </first_editor>
           <second_editor />
         </state>
