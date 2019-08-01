@@ -27,11 +27,11 @@
 ### 6.[使用ONNX将模型转移至Caffe2和移动端](https://github.com/fendouai/PyTorchDocs/blob/master/fourSection/ONNX.md)
 
 ## 第五章：PyTorch之文本篇
-### 1.聊天机器人教程
-### 2.使用字符级RNN生成名字
-### 3.使用字符级RNN进行名字分类
-### 4.在深度学习和NLP中使用Pytorch
-### 5.使用Sequence2Sequence网络和注意力进行翻译
+### 1.[聊天机器人教程](https://github.com/fendouai/PyTorchDocs/blob/master/FifthSection/Chatbot.md)
+### 2.[使用字符级RNN生成名字](https://github.com/fendouai/PyTorchDocs/blob/master/FifthSection/Char%20RNN%20Generation.MD)
+### 3.[使用字符级RNN进行名字分类](https://github.com/fendouai/PyTorchDocs/blob/master/FifthSection/Char%20RNN%20Classification.md)
+### 4.[在深度学习和NLP中使用Pytorch](https://github.com/fendouai/PyTorchDocs/blob/master/FifthSection/DeepLearning%20NLP.md)
+### 5.[使用Sequence2Sequence网络和注意力进行翻译](https://github.com/fendouai/PyTorchDocs/blob/master/FifthSection/Translation_S2S%20Network.md)
 
 ## 第六章：PyTorch之生成对抗网络
 ## 第七章：PyTorch之强化学习

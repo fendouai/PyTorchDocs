@@ -29,14 +29,14 @@ Iun
 
 开始本教程前，你已经安装好了PyTorch，并熟悉Python语言，理解“张量”的概念：
 
-* https://pytorch.org/ PyTorch安装指南
-* [Deep Learning with PyTorch：A 60 Minute Blitz ](https://github.com/apachecn/pytorch-doc-zh/blob/master/docs/beginner/deep_learning_60min_blitz.html):PyTorch的基本入门教程
-* [Learning PyTorch with Examples](https://github.com/apachecn/pytorch-doc-zh/blob/master/docs/beginner/pytorch_with_examples.html):得到深层而广泛的概述
-* [PyTorch for Former Torch Users Lua Torch](https://github.com/apachecn/pytorch-doc-zh/blob/master/docs/beginner/former_torchies_tutorial.html):如果你曾是一个Lua张量的使用者
+* https://pytorch.org/ PyTorch 安装指南
+* [Deep Learning with PyTorch：A 60 Minute Blitz ](https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html):PyTorch的基本入门教程
+* [Learning PyTorch with Examples](https://github.com/fendouai/PyTorchDocs/blob/master/ThirdSection/LearningPyTorch.md):得到深层而广泛的概述
+* [PyTorch for Former Torch Users Lua Torch](https://pytorch.org/tutorials/beginner/former_torchies_tutorial.html):如果你曾是一个Lua张量的使用者
 
 事先学习并了解RNN的工作原理对理解这个例子十分有帮助:
 
-* [The Unreasonable Effectiveness of Recurrent Neural Networks}(https://karpathy.github.io/2015/05/21/rnn-effectiveness/)展示了很多实际的例子
+* [The Unreasonable Effectiveness of Recurrent Neural Networks](https://karpathy.github.io/2015/05/21/rnn-effectiveness/)展示了很多实际的例子
 * [Understanding LSTM Networks](https://colah.github.io/posts/2015-08-Understanding-LSTMs/)是关于LSTM的，但也提供有关RNN的说明
 
 ## 1.准备数据

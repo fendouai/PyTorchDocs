@@ -18,23 +18,11 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FifthSection/Chatbot.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="23112">
-                <caret line="925" lean-forward="true" selection-start-line="925" selection-end-line="925" selection-end-column="6" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Content.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="442">
-                <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="35" />
+              <first_editor relative-caret-position="405">
+                <caret line="15" column="103" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="103" />
               </first_editor>
               <second_editor />
             </state>
@@ -45,8 +33,8 @@
         <entry file="file://$PROJECT_DIR$/FifthSection/Char RNN Classification.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="403">
-                <caret line="30" column="112" lean-forward="true" selection-start-line="27" selection-end-line="30" selection-end-column="112" />
+              <first_editor relative-caret-position="-3746">
+                <caret line="107" column="36" selection-start-line="107" selection-start-column="34" selection-end-line="107" selection-end-column="36" />
               </first_editor>
               <second_editor />
             </state>
@@ -69,9 +57,19 @@
         <entry file="file://$PROJECT_DIR$/FifthSection/Translation_S2S Network.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="618">
-                <caret line="46" column="57" selection-start-line="46" selection-start-column="57" selection-end-line="46" selection-end-column="57" />
+              <first_editor relative-caret-position="566">
+                <caret line="759" column="9" selection-start-line="759" selection-start-column="9" selection-end-line="759" selection-end-column="9" />
               </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ThirdSection/LearningPyTorch.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor />
               <second_editor />
             </state>
           </provider>
@@ -81,8 +79,8 @@
         <entry file="file://$PROJECT_DIR$/FifthSection/Char RNN Generation.MD">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="432">
-                <caret line="34" column="161" selection-start-line="34" selection-start-column="161" selection-end-line="34" selection-end-column="161" />
+              <first_editor relative-caret-position="498">
+                <caret line="384" selection-start-line="384" selection-end-line="384" selection-end-column="9" />
               </first_editor>
               <second_editor />
             </state>
@@ -97,6 +95,11 @@
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>向量</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -115,17 +118,17 @@
         <option value="$PROJECT_DIR$/SecondSection/Autograd.md" />
         <option value="$PROJECT_DIR$/fourSection/ONNX.md" />
         <option value="$PROJECT_DIR$/fourSection/AdversarialExampleGene.md" />
-        <option value="$PROJECT_DIR$/FifthSection/Chatbot.md" />
         <option value="$PROJECT_DIR$/FifthSection/Character-level RNN.MD" />
         <option value="$PROJECT_DIR$/FifthSection/DeepLearning NLP.md" />
+        <option value="$PROJECT_DIR$/FifthSection/Chatbot.md" />
         <option value="$PROJECT_DIR$/Content.md" />
-        <option value="$PROJECT_DIR$/FifthSection/Char RNN Classification.md" />
         <option value="$PROJECT_DIR$/FifthSection/Char RNN Generation.MD" />
+        <option value="$PROJECT_DIR$/FifthSection/Char RNN Classification.md" />
         <option value="$PROJECT_DIR$/FifthSection/Translation_S2S Network.md" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="12" />
     <option name="y" value="57" />
     <option name="width" value="2067" />
@@ -147,6 +150,11 @@
               <item name="PyTorchTrans" type="b2602c69:ProjectViewProjectNode" />
               <item name="PyTorchTrans" type="462c0819:PsiDirectoryNode" />
               <item name="FifthSection" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PyTorchTrans" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PyTorchTrans" type="462c0819:PsiDirectoryNode" />
+              <item name="ThirdSection" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -240,7 +248,7 @@
     <frame x="-7" y="-7" width="1455" height="935" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18534179" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.07117689" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -254,7 +262,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.06600249" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.05977584" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -391,11 +399,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/FifthSection/Chatbot.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="351">
+            <caret line="13" column="8" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ThirdSection/LearningPyTorch.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Content.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="442">
-            <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="35" />
+          <first_editor relative-caret-position="405">
+            <caret line="15" column="103" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="103" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FifthSection/Char RNN Classification.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-3746">
+            <caret line="107" column="36" selection-start-line="107" selection-start-column="34" selection-end-line="107" selection-end-column="36" />
           </first_editor>
           <second_editor />
         </state>
@@ -411,31 +447,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FifthSection/Chatbot.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="23112">
-            <caret line="925" lean-forward="true" selection-start-line="925" selection-end-line="925" selection-end-column="6" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FifthSection/Char RNN Generation.MD">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="432">
-            <caret line="34" column="161" selection-start-line="34" selection-start-column="161" selection-end-line="34" selection-end-column="161" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FifthSection/Char RNN Classification.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="403">
-            <caret line="30" column="112" lean-forward="true" selection-start-line="27" selection-end-line="30" selection-end-column="112" />
+          <first_editor relative-caret-position="498">
+            <caret line="384" selection-start-line="384" selection-end-line="384" selection-end-column="9" />
           </first_editor>
           <second_editor />
         </state>
@@ -444,8 +460,8 @@
     <entry file="file://$PROJECT_DIR$/FifthSection/Translation_S2S Network.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="618">
-            <caret line="46" column="57" selection-start-line="46" selection-start-column="57" selection-end-line="46" selection-end-column="57" />
+          <first_editor relative-caret-position="566">
+            <caret line="759" column="9" selection-start-line="759" selection-start-column="9" selection-end-line="759" selection-end-column="9" />
           </first_editor>
           <second_editor />
         </state>
