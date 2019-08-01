@@ -27,11 +27,11 @@
 ### 6.[使用ONNX将模型转移至Caffe2和移动端](https://github.com/fendouai/PyTorchDocs/blob/master/fourSection/ONNX.md)
 
 ## 第五章：PyTorch之文本篇
-### 1.Chatbot教程
-### 2.使用字符级RNN生成名称
-### 3.使用字符级RNN对名称进行分类
-### 4.深度学习NLP
-### 5.用序列翻译网络和注意的顺序
+### 1.聊天机器人教程
+### 2.使用字符级RNN生成名字
+### 3.使用字符级RNN进行名字分类
+### 4.在深度学习和NLP中使用Pytorch
+### 5.使用Sequence2Sequence网络和注意力进行翻译
 
 ## 第六章：PyTorch之生成对抗网络
 ## 第七章：PyTorch之强化学习
