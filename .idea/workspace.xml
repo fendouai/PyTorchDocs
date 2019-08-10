@@ -21,8 +21,20 @@
         <entry file="file://$PROJECT_DIR$/Content.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="405">
-                <caret line="15" column="103" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="103" />
+              <first_editor relative-caret-position="471">
+                <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FifthSection/PyTorch_Introuction.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="481">
+                <caret line="329" column="5" selection-start-line="329" selection-start-column="5" selection-end-line="329" selection-end-column="5" />
               </first_editor>
               <second_editor />
             </state>
@@ -33,8 +45,20 @@
         <entry file="file://$PROJECT_DIR$/FifthSection/DeepLearning NLP.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="539">
-                <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+              <first_editor relative-caret-position="359">
+                <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FifthSection/DL_with_PyTorch.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="553">
+                <caret line="320" selection-start-line="320" selection-end-line="320" />
               </first_editor>
               <second_editor />
             </state>
@@ -45,8 +69,8 @@
         <entry file="file://$PROJECT_DIR$/FifthSection/Word_Embedding.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor>
-                <caret column="2" lean-forward="true" selection-start-column="2" selection-end-column="15" />
+              <first_editor relative-caret-position="425">
+                <caret line="248" column="205" selection-start-line="248" selection-start-column="205" selection-end-line="248" selection-end-column="205" />
               </first_editor>
               <second_editor />
             </state>
@@ -57,32 +81,8 @@
         <entry file="file://$PROJECT_DIR$/FifthSection/Sequence_and_LSTM_Network.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor>
-                <caret column="2" lean-forward="true" selection-start-column="2" selection-end-column="20" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FifthSection/Dynamic_Desicion_Bi-LSTM.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor>
-                <caret column="2" selection-start-column="2" selection-end-column="29" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FifthSection/Char RNN Generation.MD">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="498">
-                <caret line="384" selection-start-line="384" selection-end-line="384" selection-end-column="9" />
+              <first_editor relative-caret-position="2146">
+                <caret line="239" column="17" selection-start-line="239" selection-start-column="17" selection-end-line="239" selection-end-column="17" />
               </first_editor>
               <second_editor />
             </state>
@@ -127,19 +127,20 @@
         <option value="$PROJECT_DIR$/FifthSection/Char RNN Classification.md" />
         <option value="$PROJECT_DIR$/FifthSection/Translation_S2S Network.md" />
         <option value="$PROJECT_DIR$/FifthSection/PyTorch_Introuctiion.md" />
-        <option value="$PROJECT_DIR$/FifthSection/DL_with_PyTorch.md" />
-        <option value="$PROJECT_DIR$/FifthSection/Word_Embedding.md" />
-        <option value="$PROJECT_DIR$/FifthSection/Sequence_and_LSTM_Network.md" />
-        <option value="$PROJECT_DIR$/FifthSection/Dynamic_Desicion_Bi-LSTM.md" />
         <option value="$PROJECT_DIR$/FifthSection/DeepLearning NLP.md" />
+        <option value="$PROJECT_DIR$/FifthSection/Dynamic_Desicion_Bi-LSTM.md" />
+        <option value="$PROJECT_DIR$/FifthSection/PyTorch_Introuction.md" />
+        <option value="$PROJECT_DIR$/FifthSection/DL_with_PyTorch.md" />
+        <option value="$PROJECT_DIR$/FifthSection/Sequence_and_LSTM_Network.md" />
+        <option value="$PROJECT_DIR$/FifthSection/Word_Embedding.md" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="12" />
-    <option name="y" value="57" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="42" />
+    <option name="y" value="268" />
     <option name="width" value="2067" />
-    <option name="height" value="1152" />
+    <option name="height" value="1131" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -161,7 +162,13 @@
             <path>
               <item name="PyTorchTrans" type="b2602c69:ProjectViewProjectNode" />
               <item name="PyTorchTrans" type="462c0819:PsiDirectoryNode" />
-              <item name="ThirdSection" type="462c0819:PsiDirectoryNode" />
+              <item name="FifthSection" type="462c0819:PsiDirectoryNode" />
+              <item name="notation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PyTorchTrans" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PyTorchTrans" type="462c0819:PsiDirectoryNode" />
+              <item name="fourSection" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -176,7 +183,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/FifthSection/notation" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -186,17 +193,18 @@
     </option>
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\github project\PyTorchTrans\fourSection\notation" />
-      <recent name="G:\github clone project\PyTorchDocs\Image" />
-      <recent name="G:\github clone project\PyTorchDocs\SecondSection" />
-      <recent name="G:\github clone project\PyTorchDocs\FirstSection" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\github project\PyTorchTrans\FifthSection\notation" />
       <recent name="E:\github project\PyTorchTrans\fourSection\image" />
       <recent name="E:\github project\PyTorchTrans\fourSection\notation" />
       <recent name="G:\github clone project\PyTorchDocs\Image" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\github project\PyTorchTrans\FifthSection\notation" />
+      <recent name="E:\github project\PyTorchTrans\fourSection\notation" />
+      <recent name="G:\github clone project\PyTorchDocs\Image" />
+      <recent name="G:\github clone project\PyTorchDocs\SecondSection" />
+      <recent name="G:\github clone project\PyTorchDocs\FirstSection" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -252,10 +260,10 @@
     <option name="totallyTimeSpent" value="12000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1455" height="935" extended-state="6" />
+    <frame x="28" y="179" width="1378" height="754" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26286116" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.07824143" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -269,7 +277,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.05977584" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.09967846" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -424,51 +432,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FifthSection/Char RNN Generation.MD">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="498">
-            <caret line="384" selection-start-line="384" selection-end-line="384" selection-end-column="9" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FifthSection/PyTorch_Introuctiion.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor>
-            <caret column="11" selection-start-column="11" selection-end-column="11" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FifthSection/DL_with_PyTorch.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor>
-            <caret column="17" selection-start-column="17" selection-end-column="17" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FifthSection/Translation_S2S Network.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="971">
             <caret line="759" column="9" selection-start-line="759" selection-start-column="9" selection-end-line="759" selection-end-column="9" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FifthSection/Word_Embedding.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor>
-            <caret column="2" lean-forward="true" selection-start-column="2" selection-end-column="15" />
           </first_editor>
           <second_editor />
         </state>
@@ -484,11 +452,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/FifthSection/Char RNN Generation.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="647">
+            <caret line="384" selection-start-line="384" selection-end-line="384" selection-end-column="9" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Content.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="405">
-            <caret line="15" column="103" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="103" />
+          <first_editor relative-caret-position="471">
+            <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
           </first_editor>
           <second_editor />
         </state>
@@ -497,8 +475,18 @@
     <entry file="file://$PROJECT_DIR$/FifthSection/Dynamic_Desicion_Bi-LSTM.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor>
-            <caret column="2" selection-start-column="2" selection-end-column="29" />
+          <first_editor relative-caret-position="587">
+            <caret line="304" lean-forward="true" selection-start-line="304" selection-end-line="304" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FifthSection/DL_with_PyTorch.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="553">
+            <caret line="320" selection-start-line="320" selection-end-line="320" />
           </first_editor>
           <second_editor />
         </state>
@@ -507,8 +495,28 @@
     <entry file="file://$PROJECT_DIR$/FifthSection/Sequence_and_LSTM_Network.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor>
-            <caret column="2" lean-forward="true" selection-start-column="2" selection-end-column="20" />
+          <first_editor relative-caret-position="2146">
+            <caret line="239" column="17" selection-start-line="239" selection-start-column="17" selection-end-line="239" selection-end-column="17" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FifthSection/Word_Embedding.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="425">
+            <caret line="248" column="205" selection-start-line="248" selection-start-column="205" selection-end-line="248" selection-end-column="205" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FifthSection/PyTorch_Introuction.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="481">
+            <caret line="329" column="5" selection-start-line="329" selection-start-column="5" selection-end-line="329" selection-end-column="5" />
           </first_editor>
           <second_editor />
         </state>
@@ -517,8 +525,8 @@
     <entry file="file://$PROJECT_DIR$/FifthSection/DeepLearning NLP.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="539">
-            <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+          <first_editor relative-caret-position="359">
+            <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
           </first_editor>
           <second_editor />
         </state>

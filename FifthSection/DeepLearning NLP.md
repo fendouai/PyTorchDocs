@@ -11,16 +11,16 @@
 如何变化。如果你想要尝试一些真实数据，您有能力删除本示例中的模型并重新训练他们。
 
 * PyTorch简介：
-![](https://github.com/fendouai/PyTorchDocs/blob/master/FifthSection/PyTorch_Introuctiion.md)
+[PyTorch简介](https://github.com/fendouai/PyTorchDocs/blob/master/FifthSection/PyTorch_Introuctiion.md)
 
 * 使用PyTorch进行深度学习：
-![](https://github.com/fendouai/PyTorchDocs/blob/master/FifthSection/DL_with_PyTorch.md)
+[使用PyTorch进行深度学习](https://github.com/fendouai/PyTorchDocs/blob/master/FifthSection/DL_with_PyTorch.md)
 
 * 词嵌入：编码形式的词汇语义：
-![](https://github.com/fendouai/PyTorchDocs/blob/master/FifthSection/Word_Embedding.md)
+[词嵌入：编码形式的词汇语义](https://github.com/fendouai/PyTorchDocs/blob/master/FifthSection/Word_Embedding.md)
 
 * 序列模型和长短句记忆（LSTM）模型：
-![](https://github.com/fendouai/PyTorchDocs/blob/master/FifthSection/Sequence_and_LSTM_Network.md)
+[序列模型和长短句记忆（LSTM）模型](https://github.com/fendouai/PyTorchDocs/blob/master/FifthSection/Sequence_and_LSTM_Network.md)
 
-* Advanced：制定动态决策和BI-LSTM CRF：
-![](https://github.com/fendouai/PyTorchDocs/blob/master/FifthSection/Dynamic_Desicion_Bi-LSTM.md)
+* 高级：制定动态决策和BI-LSTM CRF：
+[制定动态决策和BI-LSTM CRF](https://github.com/fendouai/PyTorchDocs/blob/master/FifthSection/Dynamic_Desicion_Bi-LSTM.md)
