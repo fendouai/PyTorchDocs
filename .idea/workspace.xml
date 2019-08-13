@@ -2,14 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dba69579-024f-442a-b5bf-b31a92577c82" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/SecondSection/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SecondSection/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SecondSection/autograd_automatic_differentiation.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SecondSection/neural_networks.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SecondSection/optional_data_parallelism.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SecondSection/training_a_classifier.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SecondSection/what_is_pytorch.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content.md" beforeDir="false" afterPath="$PROJECT_DIR$/Content.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,8 +16,8 @@
         <entry file="file://$PROJECT_DIR$/Content.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="165">
-                <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+              <first_editor relative-caret-position="571">
+                <caret line="50" column="46" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="46" />
               </first_editor>
               <second_editor />
             </state>
@@ -79,7 +71,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="833" />
@@ -186,15 +178,15 @@
       <option name="presentableId" value="Default" />
       <updated>1556094038918</updated>
       <workItem from="1556094040133" duration="12000" />
-      <workItem from="1565696349206" duration="184000" />
+      <workItem from="1565696349206" duration="877000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="196000" />
+    <option name="totallyTimeSpent" value="889000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="833" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="833" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23319027" />
@@ -459,8 +451,8 @@
     <entry file="file://$PROJECT_DIR$/Content.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="165">
-            <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+          <first_editor relative-caret-position="571">
+            <caret line="50" column="46" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="46" />
           </first_editor>
           <second_editor />
         </state>

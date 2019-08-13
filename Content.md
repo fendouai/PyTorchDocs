@@ -35,3 +35,17 @@
 
 ## 第六章：PyTorch之生成对抗网络
 ## 第七章：PyTorch之强化学习
+
+
+
+磐创AI 聊天机器人，智能客服：
+
+[http://www.panchuangai.com/](http://www.panchuangai.com/)
+
+磐创教程网站，TensorFlow，Pytorch，Keras：
+
+[http://panchuang.net/](http://panchuang.net/)
+
+魔图互联 知识图谱推荐系统：
+
+[http://motuhulian.com](http://motuhulian.com)
