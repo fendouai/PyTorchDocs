@@ -5,11 +5,11 @@
 ### 2.[PyTorch环境搭建](https://github.com/fendouai/PyTorchDocs/blob/master/FirstSection/InstallIutorial.md)
 
 ## 第二章：PyTorch之60min入门
-### 1.张量：[Tensor](https://github.com/fendouai/PyTorchDocs/blob/master/SecondSection/Tensor.md)
-### 2.自动求导：Autograd
-### 3.神经网络
-### 4.图像分类器
-### 5.数据并行化处理
+### 1.[PyTorch 入门](https://github.com/fendouai/PyTorchDocs/blob/master/SecondSection/what_is_pytorch.md)
+### 2.[PyTorch 自动微分](https://github.com/fendouai/PyTorchDocs/blob/master/SecondSection/autograd_automatic_differentiation.md)
+### 3.[PyTorch 神经网络](https://github.com/fendouai/PyTorchDocs/blob/master/SecondSection/neural_networks.md)
+### 4.[PyTorch 图像分类器](https://github.com/fendouai/PyTorchDocs/blob/master/SecondSection/training_a_classifier.md)
+### 5.[PyTorch 数据并行处理](https://github.com/fendouai/PyTorchDocs/blob/master/SecondSection/optional_data_parallelism.md)
 
 ## 第三章：PyTorch之入门强化
 ### 1.[数据加载和处理](https://github.com/fendouai/PyTorchDocs/blob/master/ThirdSection/DataLoding.md)
