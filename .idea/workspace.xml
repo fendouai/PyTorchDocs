@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dba69579-024f-442a-b5bf-b31a92577c82" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Content.md" beforeDir="false" afterPath="$PROJECT_DIR$/Content.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,11 +12,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Content.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="571">
+              <first_editor relative-caret-position="540">
+                <caret line="36" column="19" lean-forward="true" selection-end-line="50" selection-end-column="46" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="585">
                 <caret line="50" column="46" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="46" />
               </first_editor>
               <second_editor />
@@ -44,7 +56,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/Install tutorial.md" />
         <option value="$PROJECT_DIR$/InstallIutorial.md" />
         <option value="$PROJECT_DIR$/FirstSection/PyTorchIntro.md" />
@@ -68,6 +79,7 @@
         <option value="$PROJECT_DIR$/FifthSection/Sequence_and_LSTM_Network.md" />
         <option value="$PROJECT_DIR$/FifthSection/Word_Embedding.md" />
         <option value="$PROJECT_DIR$/Content.md" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -87,11 +99,6 @@
             <path>
               <item name="PyTorchDocs" type="b2602c69:ProjectViewProjectNode" />
               <item name="PyTorchDocs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PyTorchDocs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PyTorchDocs" type="462c0819:PsiDirectoryNode" />
-              <item name="SecondSection" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -178,12 +185,12 @@
       <option name="presentableId" value="Default" />
       <updated>1556094038918</updated>
       <workItem from="1556094040133" duration="12000" />
-      <workItem from="1565696349206" duration="877000" />
+      <workItem from="1565696349206" duration="1113000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="889000" />
+    <option name="totallyTimeSpent" value="1125000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="833" extended-state="0" />
@@ -234,16 +241,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="405">
             <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="60">
-            <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
           </first_editor>
           <second_editor />
         </state>
@@ -451,7 +448,17 @@
     <entry file="file://$PROJECT_DIR$/Content.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="571">
+          <first_editor relative-caret-position="540">
+            <caret line="36" column="19" lean-forward="true" selection-end-line="50" selection-end-column="46" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="585">
             <caret line="50" column="46" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="46" />
           </first_editor>
           <second_editor />
