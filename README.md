@@ -1,5 +1,11 @@
 # 目录
 本文档主要使用于PyTorch入门学者，主要参考PyTorch官方文档。
+
+作者：磐创AI pytorch 翻译小组
+
+PyTorch 入门教程：[http://pytorchchina.com](http://pytorchchina.com)
+
+
 ## 第一章：PyTorch之简介与下载
 ### 1.[PyTorch简介](https://github.com/fendouai/PyTorchDocs/blob/master/FirstSection/PyTorchIntro.md)
 ### 2.[PyTorch环境搭建](https://github.com/fendouai/PyTorchDocs/blob/master/FirstSection/InstallIutorial.md)
