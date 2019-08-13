@@ -1,7 +1,7 @@
 # 目录
 本文档主要使用于PyTorch入门学者，主要参考PyTorch官方文档。
 
-作者：[磐创AI](http://www.panchuangai.com/) pytorch 翻译小组
+作者：[磐创AI](http://www.panchuangai.com/) pytorch 翻译小组: News & fendouai
 
 PyTorch 入门教程：[http://pytorchchina.com](http://pytorchchina.com)
 
@@ -55,3 +55,5 @@ PyTorch 入门教程：[http://pytorchchina.com](http://pytorchchina.com)
 魔图互联 知识图谱推荐系统：
 
 [http://motuhulian.com](http://motuhulian.com)
+
+由于译者水平有限，如有疏漏，欢迎提交 PR。
