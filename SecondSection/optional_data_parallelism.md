@@ -3,96 +3,116 @@
 
 在这个教程中，我们将学习如何用 DataParallel 来使用多 GPU。
 通过 PyTorch 使用多个 GPU 非常简单。你可以将模型放在一个 GPU：
-<pre> device = torch.device("cuda:0")
- model.to(device)</pre>
+```python
+ device = torch.device("cuda:0")
+ model.to(device)
+```
 然后，你可以复制所有的张量到 GPU：
-<pre> mytensor = my_tensor.to(device)</pre>
+```python
+
+mytensor = my_tensor.to(device)
+
+```
 请注意，只是调用 my_tensor.to(device) 返回一个 my_tensor 新的复制在GPU上，而不是重写 my_tensor。你需要分配给他一个新的张量并且在 GPU 上使用这个张量。
 
 在多 GPU 中执行前馈，后馈操作是非常自然的。尽管如此，PyTorch 默认只会使用一个 GPU。通过使用 DataParallel 让你的模型并行运行，你可以很容易的在多 GPU 上运行你的操作。
-<pre> model = nn.DataParallel(model)</pre>
+```python
+model = nn.DataParallel(model)
+
+```
 这是整个教程的核心，我们接下来将会详细讲解。
 引用和参数
 
 引入 PyTorch 模块和定义参数
-<pre> import torch
+```python
+ import torch
  import torch.nn as nn
- from torch.utils.data import Dataset, DataLoader</pre>
+ from torch.utils.data import Dataset, DataLoader
+
+```
 # 参数
-<pre> input_size = 5
+```python
+ input_size = 5
  output_size = 2
 
  batch_size = 30
- data_size = 100</pre>
+ data_size = 100
+```
 设备
-<pre>device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")</pre>
+
+```python
+device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+
+```
 实验（玩具）数据
 
 生成一个玩具数据。你只需要实现 getitem.
-<pre><span class="k">class</span> <span class="nc">RandomDataset</span><span class="p">(</span><span class="n">Dataset</span><span class="p">):</span>
+```python
 
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">size</span><span class="p">,</span> <span class="n">length</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">len</span> <span class="o">=</span> <span class="n">length</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="n">length</span><span class="p">,</span> <span class="n">size</span><span class="p">)</span>
+class RandomDataset(Dataset):
 
-    <span class="k">def</span> <span class="fm">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="n">index</span><span class="p">]</span>
+    def __init__(self, size, length):
+        self.len = length
+        self.data = torch.randn(length, size)
 
-    <span class="k">def</span> <span class="fm">__len__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">len</span>
+    def __getitem__(self, index):
+        return self.data[index]
 
-<span class="n">rand_loader</span> <span class="o">=</span> <span class="n">DataLoader</span><span class="p">(</span><span class="n">dataset</span><span class="o">=</span><span class="n">RandomDataset</span><span class="p">(</span><span class="n">input_size</span><span class="p">,</span> <span class="n">data_size</span><span class="p">),</span><span class="n">batch_size</span><span class="o">=</span><span class="n">batch_size</span><span class="p">,</span> <span class="n">shuffle</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span></pre>
+    def __len__(self):
+        return self.len
+
+rand_loader = DataLoader(dataset=RandomDataset(input_size, data_size),batch_size=batch_size, shuffle=True)
+```
 简单模型
 
 为了做一个小 demo，我们的模型只是获得一个输入，执行一个线性操作，然后给一个输出。尽管如此，你可以使用 DataParallel   在任何模型(CNN, RNN, Capsule Net 等等.)
 
 我们放置了一个输出声明在模型中来检测输出和输入张量的大小。请注意在 batch rank 0 中的输出。
-<pre><span class="k">class</span> <span class="nc">Model</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
-    <span class="c1"># Our model</span>
+```python
 
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">input_size</span><span class="p">,</span> <span class="n">output_size</span><span class="p">):</span>
-        <span class="nb">super</span><span class="p">(</span><span class="n">Model</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">fc</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="n">input_size</span><span class="p">,</span> <span class="n">output_size</span><span class="p">)</span>
+class Model(nn.Module):
+    # Our model
 
-    <span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">input</span><span class="p">):</span>
-        <span class="n">output</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">fc</span><span class="p">(</span><span class="nb">input</span><span class="p">)</span>
-        <span class="k">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">In Model: input size"</span><span class="p">,</span> <span class="nb">input</span><span class="o">.</span><span class="n">size</span><span class="p">(),</span>
-              <span class="s2">"output size"</span><span class="p">,</span> <span class="n">output</span><span class="o">.</span><span class="n">size</span><span class="p">())</span>
+    def __init__(self, input_size, output_size):
+        super(Model, self).__init__()
+        self.fc = nn.Linear(input_size, output_size)
 
-        <span class="k">return</span> <span class="n">output</span></pre>
-&nbsp;
+    def forward(self, input):
+        output = self.fc(input)
+        print("\tIn Model: input size", input.size(),
+              "output size", output.size())
+
+        return output
+```
 
 创建模型并且数据并行处理
 
 这是整个教程的核心。首先我们需要一个模型的实例，然后验证我们是否有多个 GPU。如果我们有多个 GPU，我们可以用 nn.DataParallel 来   包裹 我们的模型。然后我们使用 model.to(device) 把模型放到多 GPU 中。
+```python
+model = Model(input_size, output_size)
+if torch.cuda.device_count() > 1:
+  print("Let's use", torch.cuda.device_count(), "GPUs!")
+  # dim = 0 [30, xxx] -> [10, ...], [10, ...], [10, ...] on 3 GPUs
+  model = nn.DataParallel(model)
 
-&nbsp;
-<pre><span class="n">model</span> <span class="o">=</span> <span class="n">Model</span><span class="p">(</span><span class="n">input_size</span><span class="p">,</span> <span class="n">output_size</span><span class="p">)</span>
-<span class="k">if</span> <span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">device_count</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
-  <span class="k">print</span><span class="p">(</span><span class="s2">"Let's use"</span><span class="p">,</span> <span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">device_count</span><span class="p">(),</span> <span class="s2">"GPUs!"</span><span class="p">)</span>
-  <span class="c1"># dim = 0 [30, xxx] -&gt; [10, ...], [10, ...], [10, ...] on 3 GPUs</span>
-  <span class="n">model</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">DataParallel</span><span class="p">(</span><span class="n">model</span><span class="p">)</span>
-
-<span class="n">model</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span></pre>
+model.to(device)
+```
 输出：
-<div id="create-model-and-dataparallel" class="section">
-<div class="sphx-glr-script-out highlight-none notranslate">
-<div class="highlight">
-<pre>Let's use 2 GPUs!
-</pre>
-</div>
-</div>
-</div>
-<div id="run-the-model" class="section"> 运行模型：</div>
-<div>现在我们可以看到输入和输出张量的大小了。</div>
-<div></div>
-<div>
-<pre><span class="k">for</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">rand_loader</span><span class="p">:</span>
-    <span class="nb">input</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
-    <span class="n">output</span> <span class="o">=</span> <span class="n">model</span><span class="p">(</span><span class="nb">input</span><span class="p">)</span>
-    <span class="k">print</span><span class="p">(</span><span class="s2">"Outside: input size"</span><span class="p">,</span> <span class="nb">input</span><span class="o">.</span><span class="n">size</span><span class="p">(),</span>
-          <span class="s2">"output_size"</span><span class="p">,</span> <span class="n">output</span><span class="o">.</span><span class="n">size</span><span class="p">())</span></pre>
-</div>
+
+```python
+
+Let's use 2 GPUs!
+
+```
+运行模型：
+现在我们可以看到输入和输出张量的大小了。
+```python
+for data in rand_loader:
+    input = data.to(device)
+    output = model(input)
+    print("Outside: input size", input.size(),
+          "output_size", output.size())
+```
 输出：
 <pre>In Model: input size torch.Size([15, 5]) output size torch.Size([15, 2])
         In Model: input size torch.Size([15, 5]) output size torch.Size([15, 2])

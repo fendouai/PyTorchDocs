@@ -24,145 +24,153 @@
 </ol>
 加载并归一化 CIFAR10
 使用 torchvision ,用它来加载 CIFAR10 数据非常简单。
-<pre><span class="kn">import</span> <span class="nn">torch</span>
-<span class="kn">import</span> <span class="nn">torchvision</span>
-<span class="kn">import</span> <span class="nn">torchvision.transforms</span> <span class="kn">as</span> <span class="nn">transforms</span></pre>
+
+```python
+import torch
+import torchvision
+import torchvision.transforms as transforms
+```
+
 torchvision 数据集的输出是范围在[0,1]之间的 PILImage，我们将他们转换成归一化范围为[-1,1]之间的张量 Tensors。
-<pre><span class="n">transform</span> <span class="o">=</span> <span class="n">transforms</span><span class="o">.</span><span class="n">Compose</span><span class="p">(</span>
-    <span class="p">[</span><span class="n">transforms</span><span class="o">.</span><span class="n">ToTensor</span><span class="p">(),</span>
-     <span class="n">transforms</span><span class="o">.</span><span class="n">Normalize</span><span class="p">((</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">),</span> <span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">))])</span>
+```python
 
-<span class="n">trainset</span> <span class="o">=</span> <span class="n">torchvision</span><span class="o">.</span><span class="n">datasets</span><span class="o">.</span><span class="n">CIFAR10</span><span class="p">(</span><span class="n">root</span><span class="o">=</span><span class="s1">'./data'</span><span class="p">,</span> <span class="n">train</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
-                                        <span class="n">download</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">transform</span><span class="o">=</span><span class="n">transform</span><span class="p">)</span>
-<span class="n">trainloader</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">DataLoader</span><span class="p">(</span><span class="n">trainset</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span>
-                                          <span class="n">shuffle</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">num_workers</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+transform = transforms.Compose(
+    [transforms.ToTensor(),
+     transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))])
 
-<span class="n">testset</span> <span class="o">=</span> <span class="n">torchvision</span><span class="o">.</span><span class="n">datasets</span><span class="o">.</span><span class="n">CIFAR10</span><span class="p">(</span><span class="n">root</span><span class="o">=</span><span class="s1">'./data'</span><span class="p">,</span> <span class="n">train</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span>
-                                       <span class="n">download</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">transform</span><span class="o">=</span><span class="n">transform</span><span class="p">)</span>
-<span class="n">testloader</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">DataLoader</span><span class="p">(</span><span class="n">testset</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span>
-                                         <span class="n">shuffle</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">num_workers</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+trainset = torchvision.datasets.CIFAR10(root='./data', train=True,
+                                        download=True, transform=transform)
+trainloader = torch.utils.data.DataLoader(trainset, batch_size=4,
+                                          shuffle=True, num_workers=2)
 
-<span class="n">classes</span> <span class="o">=</span> <span class="p">(</span><span class="s1">'plane'</span><span class="p">,</span> <span class="s1">'car'</span><span class="p">,</span> <span class="s1">'bird'</span><span class="p">,</span> <span class="s1">'cat'</span><span class="p">,</span>
-           <span class="s1">'deer'</span><span class="p">,</span> <span class="s1">'dog'</span><span class="p">,</span> <span class="s1">'frog'</span><span class="p">,</span> <span class="s1">'horse'</span><span class="p">,</span> <span class="s1">'ship'</span><span class="p">,</span> <span class="s1">'truck'</span><span class="p">)</span></pre>
+testset = torchvision.datasets.CIFAR10(root='./data', train=False,
+                                       download=True, transform=transform)
+testloader = torch.utils.data.DataLoader(testset, batch_size=4,
+                                         shuffle=False, num_workers=2)
+
+classes = ('plane', 'car', 'bird', 'cat',
+           'deer', 'dog', 'frog', 'horse', 'ship', 'truck')
+
+```
+
 输出：
-<pre>Downloading https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz to ./data/cifar-10-python.tar.gz
-Files already downloaded and verified</pre>
+```python
+
+Downloading https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz to ./data/cifar-10-python.tar.gz
+Files already downloaded and verified
+```
+
 让我们来展示其中的一些训练图片。
-<pre><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+```python
+import matplotlib.pyplot as plt
+import numpy as np
 
-<span class="c1"># functions to show an image</span>
-
-
-<span class="k">def</span> <span class="nf">imshow</span><span class="p">(</span><span class="n">img</span><span class="p">):</span>
-    <span class="n">img</span> <span class="o">=</span> <span class="n">img</span> <span class="o">/</span> <span class="mi">2</span> <span class="o">+</span> <span class="mf">0.5</span>     <span class="c1"># unnormalize</span>
-    <span class="n">npimg</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">numpy</span><span class="p">()</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="n">npimg</span><span class="p">,</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">)))</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+# functions to show an image
 
 
-<span class="c1"># get some random training images</span>
-<span class="n">dataiter</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">(</span><span class="n">trainloader</span><span class="p">)</span>
-<span class="n">images</span><span class="p">,</span> <span class="n">labels</span> <span class="o">=</span> <span class="n">dataiter</span><span class="o">.</span><span class="n">next</span><span class="p">()</span>
+def imshow(img):
+    img = img / 2 + 0.5     # unnormalize
+    npimg = img.numpy()
+    plt.imshow(np.transpose(npimg, (1, 2, 0)))
+    plt.show()
 
-<span class="c1"># show images</span>
-<span class="n">imshow</span><span class="p">(</span><span class="n">torchvision</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">make_grid</span><span class="p">(</span><span class="n">images</span><span class="p">))</span>
-<span class="c1"># print labels</span>
-<span class="k">print</span><span class="p">(</span><span class="s1">' '</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s1">'</span><span class="si">%5s</span><span class="s1">'</span> <span class="o">%</span> <span class="n">classes</span><span class="p">[</span><span class="n">labels</span><span class="p">[</span><span class="n">j</span><span class="p">]]</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">)))</span></pre>
-&nbsp;
 
-<img class="alignnone size-full wp-image-117" src="http://pytorchchina.com/wp-content/uploads/2018/12/sphx_glr_cifar10_tutorial_001.png" alt="" width="640" height="480" />
+# get some random training images
+dataiter = iter(trainloader)
+images, labels = dataiter.next()
 
+# show images
+imshow(torchvision.utils.make_grid(images))
+# print labels
+print(' '.join('%5s' % classes[labels[j]] for j in range(4)))
+
+```
 输出：
-<div id="loading-and-normalizing-cifar10" class="section">
-<div class="sphx-glr-script-out highlight-none notranslate">
-<div class="highlight">
-<pre>cat plane  ship  frog
-</pre>
-</div>
-</div>
-</div>
-<div id="define-a-convolutional-neural-network" class="section"></div>
-<div></div>
+```python
+cat plane  ship  frog
+
+```
 <div>定义一个卷积神经网络
 在这之前先 从神经网络章节 复制神经网络，并修改它为3通道的图片(在此之前它被定义为1通道)</div>
-<div></div>
-<div>
-<pre><span class="kn">import</span> <span class="nn">torch.nn</span> <span class="kn">as</span> <span class="nn">nn</span>
-<span class="kn">import</span> <span class="nn">torch.nn.functional</span> <span class="kn">as</span> <span class="nn">F</span>
+
+```python
+
+import torch.nn as nn
+import torch.nn.functional as F
 
 
-<span class="k">class</span> <span class="nc">Net</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="nb">super</span><span class="p">(</span><span class="n">Net</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">conv1</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Conv2d</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">pool</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">MaxPool2d</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">conv2</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Conv2d</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">fc1</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="mi">16</span> <span class="o">*</span> <span class="mi">5</span> <span class="o">*</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">120</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">fc2</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="mi">120</span><span class="p">,</span> <span class="mi">84</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">fc3</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="mi">84</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+class Net(nn.Module):
+    def __init__(self):
+        super(Net, self).__init__()
+        self.conv1 = nn.Conv2d(3, 6, 5)
+        self.pool = nn.MaxPool2d(2, 2)
+        self.conv2 = nn.Conv2d(6, 16, 5)
+        self.fc1 = nn.Linear(16 * 5 * 5, 120)
+        self.fc2 = nn.Linear(120, 84)
+        self.fc3 = nn.Linear(84, 10)
 
-    <span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
-        <span class="n">x</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">pool</span><span class="p">(</span><span class="n">F</span><span class="o">.</span><span class="n">relu</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">conv1</span><span class="p">(</span><span class="n">x</span><span class="p">)))</span>
-        <span class="n">x</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">pool</span><span class="p">(</span><span class="n">F</span><span class="o">.</span><span class="n">relu</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">conv2</span><span class="p">(</span><span class="n">x</span><span class="p">)))</span>
-        <span class="n">x</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">view</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">16</span> <span class="o">*</span> <span class="mi">5</span> <span class="o">*</span> <span class="mi">5</span><span class="p">)</span>
-        <span class="n">x</span> <span class="o">=</span> <span class="n">F</span><span class="o">.</span><span class="n">relu</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">fc1</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
-        <span class="n">x</span> <span class="o">=</span> <span class="n">F</span><span class="o">.</span><span class="n">relu</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">fc2</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
-        <span class="n">x</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">fc3</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">x</span>
+    def forward(self, x):
+        x = self.pool(F.relu(self.conv1(x)))
+        x = self.pool(F.relu(self.conv2(x)))
+        x = x.view(-1, 16 * 5 * 5)
+        x = F.relu(self.fc1(x))
+        x = F.relu(self.fc2(x))
+        x = self.fc3(x)
+        return x
 
 
-<span class="n">net</span> <span class="o">=</span> <span class="n">Net</span><span class="p">()</span></pre>
-</div>
-<div></div>
-<div>
+net = Net()
+```
 
-&nbsp;
 
-</div>
 <div>定义一个损失函数和优化器
 让我们使用分类交叉熵Cross-Entropy 作损失函数，动量SGD做优化器。</div>
-<div></div>
-<div>
-<pre><span class="kn">import</span> <span class="nn">torch.optim</span> <span class="kn">as</span> <span class="nn">optim</span>
 
-<span class="n">criterion</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">CrossEntropyLoss</span><span class="p">()</span>
-<span class="n">optimizer</span> <span class="o">=</span> <span class="n">optim</span><span class="o">.</span><span class="n">SGD</span><span class="p">(</span><span class="n">net</span><span class="o">.</span><span class="n">parameters</span><span class="p">(),</span> <span class="n">lr</span><span class="o">=</span><span class="mf">0.001</span><span class="p">,</span> <span class="n">momentum</span><span class="o">=</span><span class="mf">0.9</span><span class="p">)</span></pre>
-</div>
-<div></div>
+```python
+
+import torch.optim as optim
+
+criterion = nn.CrossEntropyLoss()
+optimizer = optim.SGD(net.parameters(), lr=0.001, momentum=0.9)
+```
+
 <div>训练网络
 这里事情开始变得有趣，我们只需要在数据迭代器上循环传给网络和优化器 输入就可以。</div>
 <div></div>
-<div>
-<pre><span class="k">for</span> <span class="n">epoch</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span>  <span class="c1"># loop over the dataset multiple times</span>
 
-    <span class="n">running_loss</span> <span class="o">=</span> <span class="mf">0.0</span>
-    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">data</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">trainloader</span><span class="p">,</span> <span class="mi">0</span><span class="p">):</span>
-        <span class="c1"># get the inputs</span>
-        <span class="n">inputs</span><span class="p">,</span> <span class="n">labels</span> <span class="o">=</span> <span class="n">data</span>
+```python
 
-        <span class="c1"># zero the parameter gradients</span>
-        <span class="n">optimizer</span><span class="o">.</span><span class="n">zero_grad</span><span class="p">()</span>
+for epoch in range(2):  # loop over the dataset multiple times
 
-        <span class="c1"># forward + backward + optimize</span>
-        <span class="n">outputs</span> <span class="o">=</span> <span class="n">net</span><span class="p">(</span><span class="n">inputs</span><span class="p">)</span>
-        <span class="n">loss</span> <span class="o">=</span> <span class="n">criterion</span><span class="p">(</span><span class="n">outputs</span><span class="p">,</span> <span class="n">labels</span><span class="p">)</span>
-        <span class="n">loss</span><span class="o">.</span><span class="n">backward</span><span class="p">()</span>
-        <span class="n">optimizer</span><span class="o">.</span><span class="n">step</span><span class="p">()</span>
+    running_loss = 0.0
+    for i, data in enumerate(trainloader, 0):
+        # get the inputs
+        inputs, labels = data
 
-        <span class="c1"># print statistics</span>
-        <span class="n">running_loss</span> <span class="o">+=</span> <span class="n">loss</span><span class="o">.</span><span class="n">item</span><span class="p">()</span>
-        <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2000</span> <span class="o">==</span> <span class="mi">1999</span><span class="p">:</span>    <span class="c1"># print every 2000 mini-batches</span>
-            <span class="k">print</span><span class="p">(</span><span class="s1">'[</span><span class="si">%d</span><span class="s1">, </span><span class="si">%5d</span><span class="s1">] loss: </span><span class="si">%.3f</span><span class="s1">'</span> <span class="o">%</span>
-                  <span class="p">(</span><span class="n">epoch</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">running_loss</span> <span class="o">/</span> <span class="mi">2000</span><span class="p">))</span>
-            <span class="n">running_loss</span> <span class="o">=</span> <span class="mf">0.0</span>
+        # zero the parameter gradients
+        optimizer.zero_grad()
 
-<span class="k">print</span><span class="p">(</span><span class="s1">'Finished Training'</span><span class="p">)</span></pre>
-</div>
-<div class="sphx-glr-script-out highlight-none notranslate">
-<div class="highlight"> 输出：</div>
-<div>
-<pre>[1,  2000] loss: 2.187
+        # forward + backward + optimize
+        outputs = net(inputs)
+        loss = criterion(outputs, labels)
+        loss.backward()
+        optimizer.step()
+
+        # print statistics
+        running_loss += loss.item()
+        if i % 2000 == 1999:    # print every 2000 mini-batches
+            print('[%d, %5d] loss: %.3f' %
+                  (epoch + 1, i + 1, running_loss / 2000))
+            running_loss = 0.0
+
+print('Finished Training')
+```
+
+
+输出：
+
+```
+[1,  2000] loss: 2.187
 [1,  4000] loss: 1.852
 [1,  6000] loss: 1.672
 [1,  8000] loss: 1.566
@@ -174,9 +182,11 @@ Files already downloaded and verified</pre>
 [2,  8000] loss: 1.318
 [2, 10000] loss: 1.282
 [2, 12000] loss: 1.286
-Finished Training</pre>
-</div>
-</div>
+Finished Training
+
+```
+
+
 在测试集上测试网络
 我们已经通过训练数据集对网络进行了2次训练，但是我们需要检查网络是否已经学到了东西。
 
@@ -185,69 +195,76 @@ Finished Training</pre>
 好的，第一步，让我们从测试集中显示一张图像来熟悉它。<img class="alignnone size-full wp-image-118" src="http://pytorchchina.com/wp-content/uploads/2018/12/sphx_glr_cifar10_tutorial_002.png" alt="" width="640" height="480" />
 
 输出：
-<div class="sphx-glr-script-out highlight-none notranslate">
-<div class="highlight">
-<pre>GroundTruth:    cat  ship  ship plane
-</pre>
-</div>
-</div>
+
+```python
+GroundTruth:    cat  ship  ship plane
+```
+
 现在让我们看看 神经网络认为这些样本应该预测成什么：
-<div class="highlight-python notranslate">
-<div class="highlight">
-<pre><span class="n">outputs</span> <span class="o">=</span> <span class="n">net</span><span class="p">(</span><span class="n">images</span><span class="p">)</span>
-</pre>
-</div>
-</div>
+```python
+outputs = net(images)
+
+```
 输出是预测与十个类的近似程度，与某一个类的近似程度越高，网络就越认为图像是属于这一类别。所以让我们打印其中最相似类别类标：
-<pre><span class="n">_</span><span class="p">,</span> <span class="n">predicted</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">outputs</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
 
-<span class="k">print</span><span class="p">(</span><span class="s1">'Predicted: '</span><span class="p">,</span> <span class="s1">' '</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s1">'</span><span class="si">%5s</span><span class="s1">'</span> <span class="o">%</span> <span class="n">classes</span><span class="p">[</span><span class="n">predicted</span><span class="p">[</span><span class="n">j</span><span class="p">]]</span>
-                              <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">)))</span></pre>
+```python
+_, predicted = torch.max(outputs, 1)
+
+print('Predicted: ', ' '.join('%5s' % classes[predicted[j]]
+                              for j in range(4)))
+
+```
 输出：
-<div class="sphx-glr-script-out highlight-none notranslate">
-<div class="highlight">
-<pre>Predicted:    cat  ship   car  ship
-</pre>
-</div>
-</div>
+```python
+
+Predicted:    cat  ship   car  ship
+
+```
 结果看起开非常好，让我们看看网络在整个数据集上的表现。
-<pre><span class="n">correct</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">with</span> <span class="n">torch</span><span class="o">.</span><span class="n">no_grad</span><span class="p">():</span>
-    <span class="k">for</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">testloader</span><span class="p">:</span>
-        <span class="n">images</span><span class="p">,</span> <span class="n">labels</span> <span class="o">=</span> <span class="n">data</span>
-        <span class="n">outputs</span> <span class="o">=</span> <span class="n">net</span><span class="p">(</span><span class="n">images</span><span class="p">)</span>
-        <span class="n">_</span><span class="p">,</span> <span class="n">predicted</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">outputs</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-        <span class="n">total</span> <span class="o">+=</span> <span class="n">labels</span><span class="o">.</span><span class="n">size</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-        <span class="n">correct</span> <span class="o">+=</span> <span class="p">(</span><span class="n">predicted</span> <span class="o">==</span> <span class="n">labels</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">item</span><span class="p">()</span>
+```python
 
-<span class="k">print</span><span class="p">(</span><span class="s1">'Accuracy of the network on the 10000 test images: </span><span class="si">%d</span> <span class="si">%%</span><span class="s1">'</span> <span class="o">%</span> <span class="p">(</span>
-    <span class="mi">100</span> <span class="o">*</span> <span class="n">correct</span> <span class="o">/</span> <span class="n">total</span><span class="p">))</span></pre>
+correct = 0
+total = 0
+with torch.no_grad():
+    for data in testloader:
+        images, labels = data
+        outputs = net(images)
+        _, predicted = torch.max(outputs.data, 1)
+        total += labels.size(0)
+        correct += (predicted == labels).sum().item()
+
+print('Accuracy of the network on the 10000 test images: %d %%' % (
+    100 * correct / total))
+```
+
 输出：
-<div class="sphx-glr-script-out highlight-none notranslate">
-<div class="highlight">
-<pre>Accuracy of the network on the 10000 test images: 54 %
-</pre>
-</div>
-</div>
+```python
+Accuracy of the network on the 10000 test images: 54 %
+
+
+```
 这看起来比随机预测要好，随机预测的准确率为10%（随机预测出为10类中的哪一类）。看来网络学到了东西。
-<pre><span class="n">class_correct</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="mf">0.</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
-<span class="n">class_total</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="mf">0.</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
-<span class="k">with</span> <span class="n">torch</span><span class="o">.</span><span class="n">no_grad</span><span class="p">():</span>
-    <span class="k">for</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">testloader</span><span class="p">:</span>
-        <span class="n">images</span><span class="p">,</span> <span class="n">labels</span> <span class="o">=</span> <span class="n">data</span>
-        <span class="n">outputs</span> <span class="o">=</span> <span class="n">net</span><span class="p">(</span><span class="n">images</span><span class="p">)</span>
-        <span class="n">_</span><span class="p">,</span> <span class="n">predicted</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">outputs</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-        <span class="n">c</span> <span class="o">=</span> <span class="p">(</span><span class="n">predicted</span> <span class="o">==</span> <span class="n">labels</span><span class="p">)</span><span class="o">.</span><span class="n">squeeze</span><span class="p">()</span>
-        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
-            <span class="n">label</span> <span class="o">=</span> <span class="n">labels</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-            <span class="n">class_correct</span><span class="p">[</span><span class="n">label</span><span class="p">]</span> <span class="o">+=</span> <span class="n">c</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">item</span><span class="p">()</span>
-            <span class="n">class_total</span><span class="p">[</span><span class="n">label</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
+
+```python
+class_correct = list(0. for i in range(10))
+class_total = list(0. for i in range(10))
+with torch.no_grad():
+    for data in testloader:
+        images, labels = data
+        outputs = net(images)
+        _, predicted = torch.max(outputs, 1)
+        c = (predicted == labels).squeeze()
+        for i in range(4):
+            label = labels[i]
+            class_correct[label] += c[i].item()
+            class_total[label] += 1
 
 
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="s1">'Accuracy of </span><span class="si">%5s</span><span class="s1"> : </span><span class="si">%2d</span> <span class="si">%%</span><span class="s1">'</span> <span class="o">%</span> <span class="p">(</span>
-        <span class="n">classes</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="mi">100</span> <span class="o">*</span> <span class="n">class_correct</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">/</span> <span class="n">class_total</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span></pre>
+for i in range(10):
+    print('Accuracy of %5s : %2d %%' % (
+        classes[i], 100 * class_correct[i] / class_total[i]))
+
+```
 输出：
 <pre>Accuracy of plane : 57 %
 Accuracy of   car : 73 %
@@ -266,11 +283,14 @@ Accuracy of truck : 66 %</pre>
 在GPU上训练
 就像你怎么把一个张量转移到GPU上一样，你要将神经网络转到GPU上。
 如果CUDA可以用，让我们首先定义下我们的设备为第一个可见的cuda设备。
-<pre><span class="n">device</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">device</span><span class="p">(</span><span class="s2">"cuda:0"</span> <span class="k">if</span> <span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">is_available</span><span class="p">()</span> <span class="k">else</span> <span class="s2">"cpu"</span><span class="p">)</span>
 
-<span class="c1"># Assume that we are on a CUDA machine, then this should print a CUDA device:</span>
+```python
+device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
-<span class="k">print</span><span class="p">(</span><span class="n">device</span><span class="p">)</span></pre>
+# Assume that we are on a CUDA machine, then this should print a CUDA device:
+
+print(device)
+```
 输出：
 <div class="sphx-glr-script-out highlight-none notranslate">
 <div class="highlight">
