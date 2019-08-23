@@ -56,22 +56,24 @@
 ### 1.[生成对抗网络（Generative Adversarial Networks）](https://github.com/fendouai/PyTorchDocs/blob/master/SixthSection/Dcgan.md)
 
 ## 第七章：PyTorch之强化学习
+
 ### 1.[强化学习（DQN）](https://github.com/fendouai/PyTorchDocs/blob/master/SeventhSection/ReinforcementLearning.md)
 
+# 教程推荐
 
-PyTorch 入门教程
+* PyTorch 入门教程
 
 [http://pytorchchina.com](http://pytorchchina.com)
 
-磐创AI 聊天机器人，智能客服：
+* 磐创AI 聊天机器人，智能客服：
 
 [http://www.panchuangai.com/](http://www.panchuangai.com/)
 
-磐创教程网站，TensorFlow，Pytorch，Keras：
+* 磐创教程网站，TensorFlow，Pytorch，Keras：
 
 [http://panchuang.net/](http://panchuang.net/)
 
-魔图互联 知识图谱推荐系统：
+* 魔图互联 知识图谱推荐系统：
 
 [http://motuhulian.com](http://motuhulian.com)
 
