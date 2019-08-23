@@ -51,8 +51,13 @@
 ### 4.[在深度学习和NLP中使用Pytorch](https://github.com/fendouai/PyTorchDocs/blob/master/FifthSection/DeepLearning%20NLP.md)
 ### 5.[使用Sequence2Sequence网络和注意力进行翻译](https://github.com/fendouai/PyTorchDocs/blob/master/FifthSection/Translation_S2S%20Network.md)
 
-## 第六章：PyTorch之生成对抗网络
+## 第六章：
+
+### 1.[生成对抗网络（Generative Adversarial Networks）](https://github.com/fendouai/PyTorchDocs/blob/master/SixthSection/Dcgan.md)
+
 ## 第七章：PyTorch之强化学习
+### 1.[强化学习（DQN）](https://github.com/fendouai/PyTorchDocs/blob/master/SeventhSection/ReinforcementLearning.md)
+
 
 PyTorch 入门教程
 
