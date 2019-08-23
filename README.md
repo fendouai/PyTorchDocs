@@ -13,7 +13,7 @@
 * 如果你想解决自然语言处理问题，可以看NLP 部分。
 * 还有强化学习和生成对抗网络部分内容。
 
-作者：[磐创AI](http://www.panchuangai.com/) [pytorch](http://pytorchchina.com) 翻译小组: News & PanChuang
+作者：[磐创AI](http://www.panchuangai.com/) [PyTorch](http://pytorch123.com/) 翻译小组: News & PanChuang
 
 # 目录
 ## 第一章：PyTorch之简介与下载
