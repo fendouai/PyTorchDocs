@@ -13,9 +13,7 @@
 * 如果你想解决自然语言处理问题，可以看NLP 部分。
 * 还有强化学习和生成对抗网络部分内容。
 
-作者：[磐创AI](http://www.panchuangai.com/) pytorch 翻译小组: News & PanChuang
-
-PyTorch 入门教程：[http://pytorchchina.com](http://pytorchchina.com)
+作者：[磐创AI](http://www.panchuangai.com/) [pytorch](http://pytorchchina.com) 翻译小组: News & PanChuang
 
 # 目录
 ## 第一章：PyTorch之简介与下载
@@ -54,7 +52,9 @@ PyTorch 入门教程：[http://pytorchchina.com](http://pytorchchina.com)
 ## 第六章：PyTorch之生成对抗网络
 ## 第七章：PyTorch之强化学习
 
+PyTorch 入门教程
 
+[http://pytorchchina.com](http://pytorchchina.com)
 
 磐创AI 聊天机器人，智能客服：
 
