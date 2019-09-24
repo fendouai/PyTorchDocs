@@ -8,8 +8,8 @@
     
 这是在生产中部署PyTorch模型的系列教程中的第一篇。到目前为止，以这种方式使用Flask是开始为PyTorch模型提供服务的最简单方法，
 但不适用于具有高性能要求的用例。因此：
- * 如果您已经熟悉TorchScript，则可以直接进入我们的[Loading a TorchScript Model in C++](https://pytorch.org/tutorials/advanced/cpp_export.html)教程。
- * 如果您首先需要复习TorchScript，请查看我们的[Intro a TorchScript](https://pytorch.org/tutorials/beginner/Intro_to_TorchScript_tutorial.html)教程。
+ * 如果您已经熟悉TorchScript，则可以直接进入我们的[Loading a TorchScript Model in C++](https://github.com/fendouai/PyTorchDocs/blob/master/EigthSection/torchScript_in_C%2B%2B.md)教程。
+ * 如果您首先需要复习TorchScript，请查看我们的[Intro a TorchScript](https://github.com/fendouai/PyTorchDocs/blob/master/EigthSection/torchScript.md)教程。
  
  ## 1.定义API
  我们将首先定义API端点、请求和响应类型。我们的API端点将位于`/ predict`，它接受带有包含图像的`file`参数的HTTP POST请求。响应
