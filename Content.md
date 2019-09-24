@@ -37,7 +37,7 @@
 ## 第七章：[PyTorch之强化学习（DQN）教程](https://github.com/fendouai/PyTorchDocs/blob/master/SeventhSection/ReinforcementLearning.md)
 
 ## 第八章：在生产中部署PyTorch模型
-### 1.通过带Flask的REST API在Python中部署PyTorch
+### 1.[通过带Flask的REST API在Python中部署PyTorch]()
 
 
 磐创AI 聊天机器人，智能客服：
