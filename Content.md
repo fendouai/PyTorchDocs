@@ -38,7 +38,8 @@
 
 ## 第八章：在生产中部署PyTorch模型
 ### 1.[通过带Flask的REST API在Python中部署PyTorch](https://github.com/fendouai/PyTorchDocs/blob/master/EigthSection/Deploying%20PyTorch%20in%20Python%20via%20a%20REST%20APIwith%20Flask.md)
-
+### 2.TorchScript简介
+### 3.在C++中加载TorchScript模型
 
 磐创AI 聊天机器人，智能客服：
 
