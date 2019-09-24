@@ -35,3 +35,6 @@
 
 ## 第六章：PyTorch之生成对抗网络
 ## 第七章：PyTorch之强化学习
+
+## 第八章：在生产中部署PyTorch模型
+### 1.通过带Flask的REST API在Python中部署PyTorch
