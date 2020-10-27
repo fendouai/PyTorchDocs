@@ -138,7 +138,7 @@ Construct a matrix filled zeros and of dtype long:
 </div>
 <div class="admonition note">
 <p class="first admonition-title">注意</p>
-<p class="last"><code class="docutils literal notranslate"><span class="pre">torch.Size</span></code>  是一个元组，所以它支持左右的元组操作。</p>
+<p class="last"><code class="docutils literal notranslate"><span class="pre">torch.Size</span></code>  是一个元组，所以它支持所有的元组操作。</p>
 <p class="last"></p>
 
 </div>
