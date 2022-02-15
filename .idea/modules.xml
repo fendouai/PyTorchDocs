@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/PyTorchDocs.iml" filepath="$PROJECT_DIR$/.idea/PyTorchDocs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../PyTorchVideo/.idea/PyTorchVideo.iml" filepath="$PROJECT_DIR$/../PyTorchVideo/.idea/PyTorchVideo.iml" />
     </modules>
   </component>
 </project>
