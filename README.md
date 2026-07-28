@@ -13,6 +13,14 @@
 * 如果你想解决自然语言处理问题，可以看NLP 部分。
 * 还有强化学习和生成对抗网络部分内容。
 
+# 产品推荐
+
+## [Lynote AI Humanizer](https://lynote.ai/ai-humanizer)
+
+Best AI Humanizer Free Online Tools
+
+GitHub：[lynote-ai/humanize-text](https://github.com/lynote-ai/humanize-text)
+
 # PyTorch 官方文档视频版上线B站
 
 https://www.bilibili.com/video/BV1GS4y1F71Q/
